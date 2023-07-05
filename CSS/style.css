@@ -690,7 +690,8 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     left: 16px;
     transition: fill var(--transition-duration-250) var(--transition-timing-function);
 }
-.modal-form-input:focus+.modal-form-input-icon {
+.modal-form-input:focus+.modal-form-input-icon,
+.modal-form-input:hover+.modal-form-input-icon {
     fill: var(--button-blue-iris);
 }
 .modal-form-textarea {
@@ -711,7 +712,8 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     outline: transparent;
     transition: border-color var(--transition-duration-250) var(--transition-timing-function);
 }
-.modal-form-message:focus {
+.modal-form-message:focus,
+.modal-form-message:hover {
     border-color: var(--button-blue-iris);
 }
 .modal-form-checkbox {
@@ -737,6 +739,10 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     justify-content: center;
     fill: transparent;
     margin-right: 8px;
+}
+.modal-form-checkbox-svg{
+    width: 16px;
+    height: 16px;
 }
 
 .modal-form-check:checked +.modal-form-check-desk>.modal-form-checkbox-icon{
@@ -776,72 +782,6 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 
 
 
-
-
-
-
-
-
-/* .modal-form-input-name {
-    display: block;
-    margin-bottom: 4px;
-    font-size: 12px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 14px;
-        letter-spacing: 1.1;
-}
-.modal-form-input-wrapper{
-    position: relative;
-    display: block;
-}
-
-.modal-form-input:focus {
-    outline: none;
-    background-color: transparent;
-    border-color: var(--button-blue-iris);
-}
-.modal-form-input:focus +.modal-form-input-icon{
-    fill: var(--button-blue-iris);
-}
-.modal-form-input-icon {
-    fill: var(--background-navy);
-    position: absolute;
-    top: 8px;
-    left: 16px;
-    transition: fill var(--transition-duration-250) var(--transition-timing-function);
-}
-.modal-form-check-desk{
-    display: flex;
-    align-items: center;
-    color: #8E8F99;
-        font-size: 12px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 14px;
-        letter-spacing: 0.48px;
-        margin-bottom: 24px;
-}
-.modal-form-check-desk::before {
-    content: "";
-    display: block;
-    width: 16px;
-    height: 16px;
-    border-radius: 2px;
-    border: 1px solid var(--navyblue-modal);
-    cursor: pointer;
-    margin-right: 8px;
-}
-.modal-form-check:checked + .modal-form-check-desk::before {
-    background-image: url(../images/modal-privacy-check.svg);
-    background-size: contain;
-    background-position: center;
-    border-radius: 2px;
-    border: 1px solid var(--button-blue-active-ocean);
-    background-color: var(--button-blue-active-ocean);
-} */
 
 /* PORTFOLIO */
 .portfolio-section {
